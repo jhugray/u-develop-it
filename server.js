@@ -9,7 +9,7 @@ const app = express();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-//use api routes
+// Use apiRoutes
 app.use('/api', apiRoutes);
 
 // Default response for any other request (Not Found)
@@ -25,4 +25,3 @@ db.connect(err => {
     console.log(`Server running on port ${PORT}`);
   });
 });
-
